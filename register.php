@@ -21,7 +21,7 @@ if(isset($_POST['register'])){
 			array_push($error," passwords not matched,Try again");
 		}
 			if(count($error) == 0){
-			$password = md5($password1);
+			$password = ($password1);
 			$sql = "INSERT INTO user (username, email, password) VALUES ('$username','$email','$password')";
 			mysqli_query($db, $sql);
 			
