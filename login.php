@@ -13,7 +13,7 @@ session_start();
 			}else {
 								array_push($errors," Wrong password,Try again");
         				}
-        				$password = md5($password);
+        				$password = ($password);
 				 $qry = "SELECT * FROM user WHERE `username` = '$username' AND `password`='$password';";
 				
 				$sql = mysqli_query($db,$qry);
