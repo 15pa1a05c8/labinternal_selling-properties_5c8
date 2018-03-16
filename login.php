@@ -27,7 +27,7 @@ session_start();
     			    	    		$_SESSION['monthly_limit'] = $row['monthly_limit'];
      			    	 
 						$_SESSION['success'] = "You are now logged in";
-        			    		header('location:index.php');
+        			    		header('location:add.php');
         				}
         				
 				
